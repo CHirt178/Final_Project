@@ -93,31 +93,31 @@ Partial Class Form1
         ' strpMidnight
         ' 
         strpMidnight.Name = "strpMidnight"
-        strpMidnight.Size = New Size(180, 22)
+        strpMidnight.Size = New Size(140, 22)
         strpMidnight.Text = "Midnight"
         ' 
         ' strpDark
         ' 
         strpDark.Name = "strpDark"
-        strpDark.Size = New Size(180, 22)
+        strpDark.Size = New Size(140, 22)
         strpDark.Text = "Dark"
         ' 
         ' strpBubbleGum
         ' 
         strpBubbleGum.Name = "strpBubbleGum"
-        strpBubbleGum.Size = New Size(180, 22)
+        strpBubbleGum.Size = New Size(140, 22)
         strpBubbleGum.Text = "BubbleGum "
         ' 
         ' strpCyan
         ' 
         strpCyan.Name = "strpCyan"
-        strpCyan.Size = New Size(180, 22)
+        strpCyan.Size = New Size(140, 22)
         strpCyan.Text = "Forest Green"
         ' 
         ' pbox1
         ' 
         pbox1.BackColor = SystemColors.ControlDark
-        pbox1.Location = New Point(94, 81)
+        pbox1.Location = New Point(90, 103)
         pbox1.Name = "pbox1"
         pbox1.Size = New Size(621, 296)
         pbox1.TabIndex = 7

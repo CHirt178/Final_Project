@@ -2,24 +2,58 @@
 
 Public Class Form1
 
-    Private Sub btnAutoGenerate_Click(sender As Object, e As EventArgs) Handles btnAutoGenerate.Click
+
+    Public Sub btnAutoGenerate_Click(sender As Object, e As EventArgs) Handles btnAutoGenerate.Click
+        'Graphic generator
+        Dim g As Graphics = pbox1.CreateGraphics()
         ' Create a Random object
         Dim rand As New Random()
+        Dim rand2 As New Random()
+        Dim rand3 As New Random()
 
-        ' Get a random number between 0 and the number of predefined colors
-        Dim colorIndex As Integer = rand.Next(0, 100) ' There are about 100 predefined colors in VB.NET
 
-        ' Use the color index to pick a color
-        Dim selectedColor As Color = GetRandomColor(colorIndex)
 
-        ' Output the selected color's name
-        Console.WriteLine("Selected Color: " & selectedColor.Name)
 
-        ' Here you can use selectedColor for drawing, for example:
-        ' Dim brush As New SolidBrush(selectedColor)
-        Dim brush As New SolidBrush(selectedColor)
+        'Make the loop for the random shape generation 
+        For i As Integer = 1 To 100
+            'Number range 1-3 for shapes 
+            Dim Shape As Integer = rand.Next(0, 2)
+            'Random Numbers for Size 
+            Dim SizeX As Integer = rand.Next(0, 100)
+            Dim SizeY As Integer = rand.Next(0, 100)
+            'Random Location Generator 
+            Dim A As Integer = CInt(Rnd() * pbox1.Width)
+            Dim Z As Integer = CInt(Rnd() * pbox1.Height)
 
+            ' Get a random number between 0 and the number of predefined colors
+            Dim colorIndex As Integer = rand.Next(0, 100) ' There are about 100 predefined colors in VB.NET
+
+            ' Use the color index to pick a color
+            Dim selectedColor As Color = GetRandomColor(colorIndex)
+
+            ' Output the selected color's name
+            Console.WriteLine("Selected Color: " & selectedColor.Name)
+            Dim Width As Integer = rand.Next(0, 100)
+            Dim Height As Integer = rand.Next(0, 100)
+
+            'Random Shape generator
+            Select Case Shape
+            'Line
+                Case 0
+                    g.DrawLine(New Pen(GetRandomColor(colorIndex), Width), SizeX, SizeY, SizeX + Width, SizeY + Height)
+            'Circle
+                Case 1
+                    g.DrawEllipse(New Pen(GetRandomColor(colorIndex), Width), SizeX, SizeY, Width, Height)
+            'Rectangle
+                Case 2
+                    g.DrawRectangle(New Pen(GetRandomColor(colorIndex), Width), SizeX, SizeY, Width, Height)
+            End Select
+
+        Next
+
+        g.Dispose()
     End Sub
+
 
 
 

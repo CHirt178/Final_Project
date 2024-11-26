@@ -36,4 +36,7 @@
         ' Make sure the index is within the bounds of the color array
         Return colors(index Mod colors.Length)
     End Function
+
+
+
 End Module
