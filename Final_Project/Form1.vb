@@ -94,6 +94,7 @@ Public Class Form1
         btnExit.BackColor = Color.LightPink
         btnReset.BackColor = Color.LightPink
         MenuStrip1.BackColor = Color.HotPink
+        'hi
     End Sub
 
     Private Sub strpCyan_Click(sender As Object, e As EventArgs) Handles strpCyan.Click
