@@ -75,6 +75,7 @@ Public Class Form1
         btnAutoGenerate.BackColor = Color.DarkGray
         btnExit.BackColor = Color.DarkGray
         btnReset.BackColor = Color.DarkGray
+        MenuStrip1.BackColor = Color.Black
     End Sub
 
     Private Sub strpDark_Click(sender As Object, e As EventArgs) Handles strpDark.Click
@@ -83,6 +84,7 @@ Public Class Form1
         btnAutoGenerate.BackColor = Color.Black
         btnExit.BackColor = Color.Black
         btnReset.BackColor = Color.Black
+        MenuStrip1.BackColor = Color.DarkGray
     End Sub
 
     Private Sub strpBubbleGum_Click(sender As Object, e As EventArgs) Handles strpBubbleGum.Click
@@ -91,6 +93,7 @@ Public Class Form1
         btnAutoGenerate.BackColor = Color.LightPink
         btnExit.BackColor = Color.LightPink
         btnReset.BackColor = Color.LightPink
+        MenuStrip1.BackColor = Color.HotPink
     End Sub
 
     Private Sub strpCyan_Click(sender As Object, e As EventArgs) Handles strpCyan.Click
@@ -99,5 +102,6 @@ Public Class Form1
         btnAutoGenerate.BackColor = Color.LightSeaGreen
         btnExit.BackColor = Color.LightSeaGreen
         btnReset.BackColor = Color.LightSeaGreen
+        MenuStrip1.BackColor = Color.ForestGreen
     End Sub
 End Class
