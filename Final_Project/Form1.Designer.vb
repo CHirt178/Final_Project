@@ -32,9 +32,9 @@ Partial Class Form1
         strpDark = New ToolStripMenuItem()
         strpBubbleGum = New ToolStripMenuItem()
         strpCyan = New ToolStripMenuItem()
-        PictureBox1 = New PictureBox()
+        pbox1 = New PictureBox()
         MenuStrip1.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pbox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -93,42 +93,42 @@ Partial Class Form1
         ' strpMidnight
         ' 
         strpMidnight.Name = "strpMidnight"
-        strpMidnight.Size = New Size(140, 22)
+        strpMidnight.Size = New Size(180, 22)
         strpMidnight.Text = "Midnight"
         ' 
         ' strpDark
         ' 
         strpDark.Name = "strpDark"
-        strpDark.Size = New Size(140, 22)
+        strpDark.Size = New Size(180, 22)
         strpDark.Text = "Dark"
         ' 
         ' strpBubbleGum
         ' 
         strpBubbleGum.Name = "strpBubbleGum"
-        strpBubbleGum.Size = New Size(140, 22)
+        strpBubbleGum.Size = New Size(180, 22)
         strpBubbleGum.Text = "BubbleGum "
         ' 
         ' strpCyan
         ' 
         strpCyan.Name = "strpCyan"
-        strpCyan.Size = New Size(140, 22)
-        strpCyan.Text = "Cyan"
+        strpCyan.Size = New Size(180, 22)
+        strpCyan.Text = "Forest Green"
         ' 
-        ' PictureBox1
+        ' pbox1
         ' 
-        PictureBox1.BackColor = SystemColors.ControlDark
-        PictureBox1.Location = New Point(94, 81)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(621, 296)
-        PictureBox1.TabIndex = 7
-        PictureBox1.TabStop = False
+        pbox1.BackColor = SystemColors.ControlDark
+        pbox1.Location = New Point(94, 81)
+        pbox1.Name = "pbox1"
+        pbox1.Size = New Size(621, 296)
+        pbox1.TabIndex = 7
+        pbox1.TabStop = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 503)
-        Controls.Add(PictureBox1)
+        Controls.Add(pbox1)
         Controls.Add(btnExit)
         Controls.Add(btnReset)
         Controls.Add(btnAutoGenerate)
@@ -139,7 +139,7 @@ Partial Class Form1
         Text = "Random Art Genorator "
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(pbox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -153,6 +153,6 @@ Partial Class Form1
     Friend WithEvents strpDark As ToolStripMenuItem
     Friend WithEvents strpBubbleGum As ToolStripMenuItem
     Friend WithEvents strpCyan As ToolStripMenuItem
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents pbox1 As PictureBox
 
 End Class
