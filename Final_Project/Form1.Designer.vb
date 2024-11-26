@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Panel1 = New Panel()
         Label1 = New Label()
         btnAutoGenerate = New Button()
         btnReset = New Button()
@@ -33,17 +32,10 @@ Partial Class Form1
         strpDark = New ToolStripMenuItem()
         strpBubbleGum = New ToolStripMenuItem()
         strpCyan = New ToolStripMenuItem()
+        PictureBox1 = New PictureBox()
         MenuStrip1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = SystemColors.AppWorkspace
-        Panel1.ForeColor = SystemColors.AppWorkspace
-        Panel1.Location = New Point(81, 75)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(643, 283)
-        Panel1.TabIndex = 0
         ' 
         ' Label1
         ' 
@@ -56,7 +48,7 @@ Partial Class Form1
         ' 
         ' btnAutoGenerate
         ' 
-        btnAutoGenerate.Location = New Point(81, 438)
+        btnAutoGenerate.Location = New Point(81, 436)
         btnAutoGenerate.Name = "btnAutoGenerate"
         btnAutoGenerate.Size = New Size(81, 55)
         btnAutoGenerate.TabIndex = 2
@@ -65,7 +57,7 @@ Partial Class Form1
         ' 
         ' btnReset
         ' 
-        btnReset.Location = New Point(360, 438)
+        btnReset.Location = New Point(365, 436)
         btnReset.Name = "btnReset"
         btnReset.Size = New Size(81, 55)
         btnReset.TabIndex = 3
@@ -122,27 +114,35 @@ Partial Class Form1
         strpCyan.Size = New Size(140, 22)
         strpCyan.Text = "Cyan"
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = SystemColors.ControlDark
+        PictureBox1.Location = New Point(94, 81)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(621, 296)
+        PictureBox1.TabIndex = 7
+        PictureBox1.TabStop = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 503)
+        Controls.Add(PictureBox1)
         Controls.Add(btnExit)
         Controls.Add(btnReset)
         Controls.Add(btnAutoGenerate)
         Controls.Add(Label1)
-        Controls.Add(Panel1)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
         Name = "Form1"
         Text = "Random Art Genorator "
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents btnAutoGenerate As Button
     Friend WithEvents btnReset As Button
@@ -153,5 +153,6 @@ Partial Class Form1
     Friend WithEvents strpDark As ToolStripMenuItem
     Friend WithEvents strpBubbleGum As ToolStripMenuItem
     Friend WithEvents strpCyan As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
 
 End Class
