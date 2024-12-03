@@ -32,6 +32,7 @@ Partial Class Form1
         strpDark = New ToolStripMenuItem()
         strpBubbleGum = New ToolStripMenuItem()
         strpCyan = New ToolStripMenuItem()
+        DefaultToolStripMenuItem = New ToolStripMenuItem()
         pbox1 = New PictureBox()
         MenuStrip1.SuspendLayout()
         CType(pbox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -48,15 +49,18 @@ Partial Class Form1
         ' 
         ' btnAutoGenerate
         ' 
+        btnAutoGenerate.BackColor = SystemColors.Control
+        btnAutoGenerate.FlatStyle = FlatStyle.Flat
         btnAutoGenerate.Location = New Point(81, 436)
         btnAutoGenerate.Name = "btnAutoGenerate"
         btnAutoGenerate.Size = New Size(81, 55)
         btnAutoGenerate.TabIndex = 2
         btnAutoGenerate.Text = "&Auto Generator "
-        btnAutoGenerate.UseVisualStyleBackColor = True
+        btnAutoGenerate.UseVisualStyleBackColor = False
         ' 
         ' btnReset
         ' 
+        btnReset.FlatStyle = FlatStyle.Flat
         btnReset.Location = New Point(365, 436)
         btnReset.Name = "btnReset"
         btnReset.Size = New Size(81, 55)
@@ -66,6 +70,7 @@ Partial Class Form1
         ' 
         ' btnExit
         ' 
+        btnExit.FlatStyle = FlatStyle.Flat
         btnExit.Location = New Point(643, 438)
         btnExit.Name = "btnExit"
         btnExit.Size = New Size(81, 55)
@@ -85,7 +90,7 @@ Partial Class Form1
         ' 
         ' ThemesToolStripMenuItem
         ' 
-        ThemesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {strpMidnight, strpDark, strpBubbleGum, strpCyan})
+        ThemesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {strpMidnight, strpDark, strpBubbleGum, strpCyan, DefaultToolStripMenuItem})
         ThemesToolStripMenuItem.Name = "ThemesToolStripMenuItem"
         ThemesToolStripMenuItem.Size = New Size(60, 20)
         ThemesToolStripMenuItem.Text = "Themes"
@@ -93,26 +98,32 @@ Partial Class Form1
         ' strpMidnight
         ' 
         strpMidnight.Name = "strpMidnight"
-        strpMidnight.Size = New Size(140, 22)
+        strpMidnight.Size = New Size(180, 22)
         strpMidnight.Text = "Midnight"
         ' 
         ' strpDark
         ' 
         strpDark.Name = "strpDark"
-        strpDark.Size = New Size(140, 22)
+        strpDark.Size = New Size(180, 22)
         strpDark.Text = "Dark"
         ' 
         ' strpBubbleGum
         ' 
         strpBubbleGum.Name = "strpBubbleGum"
-        strpBubbleGum.Size = New Size(140, 22)
+        strpBubbleGum.Size = New Size(180, 22)
         strpBubbleGum.Text = "BubbleGum "
         ' 
         ' strpCyan
         ' 
         strpCyan.Name = "strpCyan"
-        strpCyan.Size = New Size(140, 22)
+        strpCyan.Size = New Size(180, 22)
         strpCyan.Text = "Forest Green"
+        ' 
+        ' DefaultToolStripMenuItem
+        ' 
+        DefaultToolStripMenuItem.Name = "DefaultToolStripMenuItem"
+        DefaultToolStripMenuItem.Size = New Size(180, 22)
+        DefaultToolStripMenuItem.Text = "Default"
         ' 
         ' pbox1
         ' 
@@ -154,5 +165,6 @@ Partial Class Form1
     Friend WithEvents strpBubbleGum As ToolStripMenuItem
     Friend WithEvents strpCyan As ToolStripMenuItem
     Friend WithEvents pbox1 As PictureBox
+    Friend WithEvents DefaultToolStripMenuItem As ToolStripMenuItem
 
 End Class

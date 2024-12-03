@@ -1,4 +1,6 @@
 ﻿Imports System.Drawing.Design
+Imports System.Text.Json
+Imports System.Xml
 
 Public Class Form1
 
@@ -14,16 +16,20 @@ Public Class Form1
 
 
 
+
+
+
+
+
+
         'Make the loop for the random shape generation 
         For i As Integer = 1 To 100
             'Number range 1-3 for shapes 
             Dim Shape As Integer = rand.Next(0, 2)
             'Random Numbers for Size 
-            Dim SizeX As Integer = rand.Next(0, 100)
-            Dim SizeY As Integer = rand.Next(0, 100)
-            'Random Location Generator 
-            Dim A As Integer = CInt(Rnd() * pbox1.Width)
-            Dim Z As Integer = CInt(Rnd() * pbox1.Height)
+            Dim SizeX As Integer = rand.Next(0, 600)
+            Dim SizeY As Integer = rand.Next(0, 600)
+
 
             ' Get a random number between 0 and the number of predefined colors
             Dim colorIndex As Integer = rand.Next(0, 100) ' There are about 100 predefined colors in VB.NET
@@ -51,6 +57,8 @@ Public Class Form1
 
         Next
 
+
+
         g.Dispose()
     End Sub
 
@@ -73,6 +81,7 @@ Public Class Form1
         btnReset.BackColor = Color.DarkGray
         MenuStrip1.BackColor = Color.Black
         MenuStrip1.ForeColor = Color.White
+        pbox1.BackColor = Color.DarkGray
     End Sub
 
     Private Sub strpDark_Click(sender As Object, e As EventArgs) Handles strpDark.Click
@@ -83,6 +92,7 @@ Public Class Form1
         btnReset.BackColor = Color.Black
         MenuStrip1.BackColor = Color.DarkGray
         MenuStrip1.ForeColor = Color.White
+        pbox1.BackColor = Color.Black
     End Sub
 
     Private Sub strpBubbleGum_Click(sender As Object, e As EventArgs) Handles strpBubbleGum.Click
@@ -93,16 +103,32 @@ Public Class Form1
         btnReset.BackColor = Color.LightPink
         MenuStrip1.BackColor = Color.HotPink
         MenuStrip1.ForeColor = Color.Black
-        'hi
+        pbox1.BackColor = Color.LightPink
     End Sub
 
     Private Sub strpCyan_Click(sender As Object, e As EventArgs) Handles strpCyan.Click
-        Me.BackColor = Color.ForestGreen
+        Me.BackColor = Color.DarkGreen
         Me.ForeColor = Color.Black
-        btnAutoGenerate.BackColor = Color.LightSeaGreen
-        btnExit.BackColor = Color.LightSeaGreen
-        btnReset.BackColor = Color.LightSeaGreen
-        MenuStrip1.BackColor = Color.ForestGreen
+        btnAutoGenerate.BackColor = Color.ForestGreen
+        btnExit.BackColor = Color.ForestGreen
+        btnReset.BackColor = Color.ForestGreen
+        MenuStrip1.BackColor = Color.DarkGreen
         MenuStrip1.ForeColor = Color.Black
+        pbox1.BackColor = Color.ForestGreen
+    End Sub
+
+    Private Sub DefaultToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DefaultToolStripMenuItem.Click
+        Me.BackColor = DefaultBackColor
+        Me.ForeColor = Color.Black
+        btnAutoGenerate.BackColor = DefaultBackColor
+        btnExit.BackColor = DefaultBackColor
+        btnReset.BackColor = DefaultBackColor
+        MenuStrip1.BackColor = DefaultBackColor
+        MenuStrip1.ForeColor = Color.Black
+        pbox1.BackColor = Color.LightGray
+    End Sub
+
+    Private Sub SaveAsjpgToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class

@@ -59,5 +59,25 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _2048x1365_Oak_trees_SEO_GettyImages_90590330_b6bfe8b() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("2048x1365-Oak-trees-SEO-GettyImages-90590330-b6bfe8b", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pexels_krisof_1252890() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pexels-krisof-1252890", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace
