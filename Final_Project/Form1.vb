@@ -1,6 +1,4 @@
-﻿Imports System.Drawing.Design
-
-Public Class Form1
+﻿Public Class Form1
 
 
     Public Sub btnAutoGenerate_Click(sender As Object, e As EventArgs) Handles btnAutoGenerate.Click
@@ -18,12 +16,9 @@ Public Class Form1
         For i As Integer = 1 To 100
             'Number range 1-3 for shapes 
             Dim Shape As Integer = rand.Next(0, 2)
-            'Random Numbers for Size 
-            Dim SizeX As Integer = rand.Next(0, 100)
-            Dim SizeY As Integer = rand.Next(0, 100)
             'Random Location Generator 
-            Dim A As Integer = CInt(Rnd() * pbox1.Width)
-            Dim Z As Integer = CInt(Rnd() * pbox1.Height)
+            Dim SizeX As Integer = rand.Next(0, 600)
+            Dim SizeY As Integer = rand.Next(0, 600)
 
             ' Get a random number between 0 and the number of predefined colors
             Dim colorIndex As Integer = rand.Next(0, 100) ' There are about 100 predefined colors in VB.NET
@@ -33,8 +28,8 @@ Public Class Form1
 
             ' Output the selected color's name
             Console.WriteLine("Selected Color: " & selectedColor.Name)
-            Dim Width As Integer = rand.Next(0, 100)
-            Dim Height As Integer = rand.Next(0, 100)
+            Dim Width As Integer = rand.Next(0, 130)
+            Dim Height As Integer = rand.Next(0, 130)
 
             'Random Shape generator
             Select Case Shape
