@@ -101,31 +101,31 @@ Partial Class Form1
         ' strpMidnight
         ' 
         strpMidnight.Name = "strpMidnight"
-        strpMidnight.Size = New Size(140, 22)
+        strpMidnight.Size = New Size(180, 22)
         strpMidnight.Text = "Midnight"
         ' 
         ' strpDark
         ' 
         strpDark.Name = "strpDark"
-        strpDark.Size = New Size(140, 22)
+        strpDark.Size = New Size(180, 22)
         strpDark.Text = "Dark"
         ' 
         ' strpBubbleGum
         ' 
         strpBubbleGum.Name = "strpBubbleGum"
-        strpBubbleGum.Size = New Size(140, 22)
+        strpBubbleGum.Size = New Size(180, 22)
         strpBubbleGum.Text = "BubbleGum "
         ' 
         ' strpCyan
         ' 
         strpCyan.Name = "strpCyan"
-        strpCyan.Size = New Size(140, 22)
+        strpCyan.Size = New Size(180, 22)
         strpCyan.Text = "Forest Green"
         ' 
         ' DefaultToolStripMenuItem
         ' 
         DefaultToolStripMenuItem.Name = "DefaultToolStripMenuItem"
-        DefaultToolStripMenuItem.Size = New Size(140, 22)
+        DefaultToolStripMenuItem.Size = New Size(180, 22)
         DefaultToolStripMenuItem.Text = "Default"
         ' 
         ' pbox1
@@ -160,7 +160,7 @@ Partial Class Form1
         Controls.Add(pbox2)
         MainMenuStrip = MenuStrip1
         Name = "Form1"
-        Text = "Random Art Genorator "
+        Text = "Random Art Generator "
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         CType(pbox1, ComponentModel.ISupportInitialize).EndInit()
