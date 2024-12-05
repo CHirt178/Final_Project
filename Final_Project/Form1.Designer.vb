@@ -34,18 +34,21 @@ Partial Class Form1
         strpCyan = New ToolStripMenuItem()
         DefaultToolStripMenuItem = New ToolStripMenuItem()
         pbox1 = New PictureBox()
+        pbox2 = New PictureBox()
         MenuStrip1.SuspendLayout()
         CType(pbox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pbox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
+        Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(231, 9)
+        Label1.Location = New Point(223, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(381, 37)
+        Label1.Size = New Size(347, 40)
         Label1.TabIndex = 1
-        Label1.Text = "Random Art Generation "
+        Label1.Text = "Random Art Generation"
         ' 
         ' btnAutoGenerate
         ' 
@@ -98,31 +101,31 @@ Partial Class Form1
         ' strpMidnight
         ' 
         strpMidnight.Name = "strpMidnight"
-        strpMidnight.Size = New Size(180, 22)
+        strpMidnight.Size = New Size(140, 22)
         strpMidnight.Text = "Midnight"
         ' 
         ' strpDark
         ' 
         strpDark.Name = "strpDark"
-        strpDark.Size = New Size(180, 22)
+        strpDark.Size = New Size(140, 22)
         strpDark.Text = "Dark"
         ' 
         ' strpBubbleGum
         ' 
         strpBubbleGum.Name = "strpBubbleGum"
-        strpBubbleGum.Size = New Size(180, 22)
+        strpBubbleGum.Size = New Size(140, 22)
         strpBubbleGum.Text = "BubbleGum "
         ' 
         ' strpCyan
         ' 
         strpCyan.Name = "strpCyan"
-        strpCyan.Size = New Size(180, 22)
+        strpCyan.Size = New Size(140, 22)
         strpCyan.Text = "Forest Green"
         ' 
         ' DefaultToolStripMenuItem
         ' 
         DefaultToolStripMenuItem.Name = "DefaultToolStripMenuItem"
-        DefaultToolStripMenuItem.Size = New Size(180, 22)
+        DefaultToolStripMenuItem.Size = New Size(140, 22)
         DefaultToolStripMenuItem.Text = "Default"
         ' 
         ' pbox1
@@ -133,6 +136,15 @@ Partial Class Form1
         pbox1.Size = New Size(621, 296)
         pbox1.TabIndex = 7
         pbox1.TabStop = False
+        ' 
+        ' pbox2
+        ' 
+        pbox2.Location = New Point(0, 0)
+        pbox2.Name = "pbox2"
+        pbox2.Size = New Size(800, 507)
+        pbox2.SizeMode = PictureBoxSizeMode.StretchImage
+        pbox2.TabIndex = 8
+        pbox2.TabStop = False
         ' 
         ' Form1
         ' 
@@ -145,12 +157,14 @@ Partial Class Form1
         Controls.Add(btnAutoGenerate)
         Controls.Add(Label1)
         Controls.Add(MenuStrip1)
+        Controls.Add(pbox2)
         MainMenuStrip = MenuStrip1
         Name = "Form1"
         Text = "Random Art Genorator "
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         CType(pbox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(pbox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -166,5 +180,6 @@ Partial Class Form1
     Friend WithEvents strpCyan As ToolStripMenuItem
     Friend WithEvents pbox1 As PictureBox
     Friend WithEvents DefaultToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents pbox2 As PictureBox
 
 End Class

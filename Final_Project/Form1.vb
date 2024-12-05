@@ -1,7 +1,9 @@
 ﻿Imports System.Drawing.Design
 Imports System.Text.Json
 Imports System.Xml
-
+'Author: Connor and Caden
+'Project: Final Project 
+'Date: December 5, 2024
 Public Class Form1
 
 
@@ -12,15 +14,6 @@ Public Class Form1
         Dim rand As New Random()
         Dim rand2 As New Random()
         Dim rand3 As New Random()
-
-
-
-
-
-
-
-
-
 
         'Make the loop for the random shape generation 
         For i As Integer = 1 To 100
@@ -82,6 +75,7 @@ Public Class Form1
         MenuStrip1.BackColor = Color.Black
         MenuStrip1.ForeColor = Color.White
         pbox1.BackColor = Color.DarkGray
+        pbox2.Image = My.Resources.pexels_krisof_1252890
     End Sub
 
     Private Sub strpDark_Click(sender As Object, e As EventArgs) Handles strpDark.Click
@@ -93,6 +87,7 @@ Public Class Form1
         MenuStrip1.BackColor = Color.DarkGray
         MenuStrip1.ForeColor = Color.White
         pbox1.BackColor = Color.Black
+        pbox2.Image = My.Resources.premium_photo_1683121862832_2c9fe1cf4b79
     End Sub
 
     Private Sub strpBubbleGum_Click(sender As Object, e As EventArgs) Handles strpBubbleGum.Click
@@ -104,6 +99,7 @@ Public Class Form1
         MenuStrip1.BackColor = Color.HotPink
         MenuStrip1.ForeColor = Color.Black
         pbox1.BackColor = Color.LightPink
+        pbox2.Image = My.Resources.photo_1627494113508_9ba5b63d9d5c
     End Sub
 
     Private Sub strpCyan_Click(sender As Object, e As EventArgs) Handles strpCyan.Click
@@ -115,6 +111,7 @@ Public Class Form1
         MenuStrip1.BackColor = Color.DarkGreen
         MenuStrip1.ForeColor = Color.Black
         pbox1.BackColor = Color.ForestGreen
+        pbox2.Image = My.Resources._2048x1365_Oak_trees_SEO_GettyImages_90590330_b6bfe8b
     End Sub
 
     Private Sub DefaultToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DefaultToolStripMenuItem.Click
@@ -126,6 +123,7 @@ Public Class Form1
         MenuStrip1.BackColor = DefaultBackColor
         MenuStrip1.ForeColor = Color.Black
         pbox1.BackColor = Color.LightGray
+        pbox2.Image = Nothing
     End Sub
 
     Private Sub SaveAsjpgToolStripMenuItem_Click(sender As Object, e As EventArgs)
